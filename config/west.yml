@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: zmk
+      url-base: https://github.com/mstralenya
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: zmk
+      revision: leeloo_r2_branch
       import: app/west.yml
   self:
     path: config
