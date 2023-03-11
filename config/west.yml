@@ -1,10 +1,10 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/ClicketySplit
+      url-base: https://github.com/mstralenya
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: zmk
       revision: leeloo_r2_branch
       import: app/west.yml
   self:
