@@ -33,17 +33,27 @@
 
 / {
 
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp EQUAL>, <&kp MINUS>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             label = " QWERTY";
             bindings = <
-&kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                           &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp BSLH
-&kp ESC    &kp Q      &kp W      &kp E      &kp R      &kp T                            &kp Y      &kp U      &kp I      &kp O      &kp P      &kp GRAV
+&kp GRAV  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                           &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp BSLH
+&kp ESC    &kp Q      &kp W      &kp E      &kp R      &kp T                            &kp Y      &kp U      &kp I      &kp O      &kp P      &td0
 &kp TAB    &kp A      &kp S      &kp D      &kp F      &kp G                            &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
 &kp LSHIFT &kp Z      &kp X      &kp C      &kp V      &kp B     &kp LBKT    &kp RBKT   &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp LGUI
-                             &kp LALT   &kp LCTRL  &lt 1 MINUS  &lt 2 SPACE   &lt 2 RET  &lt 1 EQUAL  &kp BSPC   &kp LG(SPACE)
+                             &kp LALT   &kp LCTRL  &lt 1 LBKT  &lt 2 SPACE   &lt 2 RET  &lt 1 RBKT  &kp BSPC   &kp LG(SPACE)
             >;
 
              sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PAGE_DOWN PAGE_UP>;
