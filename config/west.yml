@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmk
-      revision: leeloo_r2_branch
+      revision: leeloo
       import: app/west.yml
   self:
     path: config
