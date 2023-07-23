@@ -22,6 +22,7 @@
 #define RGBBRD  &rgb_ug RGB_BRD
 #define RGBEFF  &rgb_ug RGB_EFF
 #define USBTOG  &out OUT_TOG
+#define EXTPOW  &ext_power EP_TOG
 
 
 /* 
@@ -29,10 +30,10 @@
  * Uncomment these next three lines if implementing nice!view Displays
  */
 nice_view_spi: &spi0 {
-	// compatible = "nordic,nrf-spim";
-	// pinctrl-0 = <&spi0_default>;
-	// pinctrl-1 = <&spi0_sleep>;
-	// pinctrl-names = "default", "sleep";
+	compatible = "nordic,nrf-spim";
+	pinctrl-0 = <&spi0_default>;
+	pinctrl-1 = <&spi0_sleep>;
+	pinctrl-names = "default", "sleep";
 	cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
 };
 
@@ -51,7 +52,7 @@ nice_view_spi: &spi0 {
                              &kp LALT   &kp LCTRL  &lt 1 LBKT  &kp SPACE     &lt 2 RET  &lt 1 RBKT &kp BSPC   &kp LGUI
             >;
 
-            sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT >;
+            sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP >;
         };
 
         lower_layer {
@@ -64,20 +65,20 @@ nice_view_spi: &spi0 {
                                  &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
             >;
 
-            sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT >;
+            sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP >;
         };
 
         raise_layer {
             label = " Raise";
             bindings = <
-&trans     &trans     &trans     &trans     &trans     &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+EXTPOW     &trans     &trans     &trans     &trans     &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
 &trans     &trans     &trans     &trans     &trans     &trans                           &trans        &trans        &trans        &trans        &sys_reset    &bootloader
 RGBON      RGBTOG     RGBHUI     RGBSAI     RGBBRI     &trans                           &trans        &trans        &trans        &trans        &trans        &trans
 RGBOFF     RGBEFF     RGBHUD     RGBSAD     RGBBRD     &trans     &trans     &trans     &trans        &trans        &trans        &trans        &trans        &trans
                                  &trans     &trans     &trans     &trans     &trans     &trans        &bt BT_CLR    USBTOG
             >;
 
-            sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT >;
+            sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP >;
         };
 
     };
