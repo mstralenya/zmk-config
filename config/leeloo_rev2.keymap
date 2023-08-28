@@ -33,6 +33,9 @@ nice_view_spi: &spi0 {
 	cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
 };
 
+&left_encoder { resolution = <1>; };
+&right_encoder { resolution = <1>; };
+
 / {
 
     keymap {
