@@ -63,8 +63,6 @@ nice_view_spi: &spi0 {
 &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
                                  &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         raise_layer {
@@ -76,8 +74,6 @@ RGBON      RGBTOG     RGBHUI     RGBSAI     RGBBRI     &trans                   
 RGBOFF     RGBEFF     RGBHUD     RGBSAD     RGBBRD     &trans     &trans     &trans     &trans        &trans        &trans        &trans        &trans        &trans
                                  &trans     &trans     &trans     &trans     &trans     &trans        &bt BT_CLR    USBTOG
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
     };
