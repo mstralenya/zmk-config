@@ -51,7 +51,7 @@ nice_view_spi: &spi0 {
                              &kp LALT   &kp LCTRL  &lt 1 LBKT  &kp SPACE     &lt 2 RET  &lt 1 RBKT &kp BSPC   &kp LGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         lower_layer {
@@ -64,7 +64,7 @@ nice_view_spi: &spi0 {
                                  &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         raise_layer {
@@ -77,7 +77,7 @@ RGBOFF     RGBEFF     RGBHUD     RGBSAD     RGBBRD     &trans     &trans     &tr
                                  &trans     &trans     &trans     &trans     &trans     &trans        &bt BT_CLR    USBTOG
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
     };
