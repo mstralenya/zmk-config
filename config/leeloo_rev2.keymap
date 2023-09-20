@@ -51,7 +51,7 @@ nice_view_spi: &spi0 {
                              &kp LALT   &kp LCTRL  &lt 1 LBKT  &kp SPACE     &lt 2 RET  &lt 1 RBKT &kp BSPC   &kp LGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_NEXT C_PREV>;
         };
 
         lower_layer {
