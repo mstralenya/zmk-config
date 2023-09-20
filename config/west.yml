@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/mstralenya
   projects:
     - name: zmk
-      remote: zmkfix
-      revision: leeloo
+      remote: zmk
+      revision: main
       import: app/west.yml
   self:
     path: config
