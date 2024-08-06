@@ -24,6 +24,8 @@ config ZMK_BLUE
 
 endif
 
+if SHIELD_LEELOO
+
 if ZMK_DISPLAY
 
 config I2C
