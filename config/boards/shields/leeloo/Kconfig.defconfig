@@ -19,7 +19,7 @@ if SHIELD_LEELOO_REV2_LEFT || SHIELD_LEELOO_REV2_RIGHT || SHIELD_LEELOO_REV2_DON
 config ZMK_SPLIT
     default y
 
-config ZMK_BLUE
+config ZMK_BLE
     default y
 
 endif
