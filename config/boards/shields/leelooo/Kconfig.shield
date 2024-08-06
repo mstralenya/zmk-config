@@ -5,12 +5,12 @@ config SHIELD_LEELOOO
     bool
 
 config SHIELD_LEELOOO_LEFT
-    def_bool $(shields_list_contains,leelooo_rev2_left)
+    def_bool $(shields_list_contains,leelooo_left)
     select SHIELD_LEELOO
 
 config SHIELD_LEELOOO_RIGHT
-    def_bool $(shields_list_contains,leelooo_rev2_right)
+    def_bool $(shields_list_contains,leelooo_right)
     select SHIELD_LEELOO
 
 config SHIELD_LEELOOO_DONGLE
-    def_bool $(shields_list_contains,leelooo_rev2_dongle)
+    def_bool $(shields_list_contains,leelooo_dongle)

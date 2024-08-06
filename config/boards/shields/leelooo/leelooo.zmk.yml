@@ -12,6 +12,6 @@ features:
   - underglow
 
 siblings:
-  - leelooo_rev2_left
-  - leelooo_rev2_right
-  - leelooo_rev2_dongle
+  - leelooo_left
+  - leelooo_right
+  - leelooo_dongle
