@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "leelooo_rev2.dtsi"
+#include "leelooo.dtsi"
 
 &default_transform {
     col-offset = <6>;
