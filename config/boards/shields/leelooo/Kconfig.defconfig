@@ -1,10 +1,10 @@
 # Copyright (c) 2023 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_LEELOO_REV2_DONGLE
+if SHIELD_LEELOOO_REV2_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "Leeloo v2 dongle"
+    default "Leelooo v2 dongle"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
@@ -14,7 +14,7 @@ config ZMK_USB
 
 endif
 
-if SHIELD_LEELOO_REV2_LEFT || SHIELD_LEELOO_REV2_RIGHT || SHIELD_LEELOO_REV2_DONGLE
+if SHIELD_LEELOOO_REV2_LEFT || SHIELD_LEELOOO_REV2_RIGHT || SHIELD_LEELOOO_REV2_DONGLE
 
 config ZMK_SPLIT
     default y
