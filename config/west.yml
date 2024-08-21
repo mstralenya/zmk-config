@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: zmk
       url-base: https://github.com/zmkfirmware
-    - name: zmkfix
-      url-base: https://github.com/mstralenya
   projects:
     - name: zmk
       remote: zmk

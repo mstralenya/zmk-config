@@ -1,0 +1,11 @@
+# Copyright (c) 2023 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_LL_DONGLE
+    def_bool $(shields_list_contains,ll_dongle)
+
+config SHIELD_LL_LEFT
+    def_bool $(shields_list_contains,ll_left)
+
+config SHIELD_LL_RIGHT
+    def_bool $(shields_list_contains,ll_right)
