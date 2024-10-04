@@ -24,10 +24,6 @@
 #define USBTOG  &out OUT_TOG
 #define EXTPOW  &ext_power EP_TOG
 
-nice_view_spi: &spi0 {
- cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
-};
-
 / {
 
     keymap {
