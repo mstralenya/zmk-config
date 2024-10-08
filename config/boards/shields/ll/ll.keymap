@@ -5,6 +5,10 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+nice_view_spi: &spi0 {
+ cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
+};
+
 // Layers
 #define DEFAULT    0       // default_layer
 #define LOWER      1       // lower_layer
