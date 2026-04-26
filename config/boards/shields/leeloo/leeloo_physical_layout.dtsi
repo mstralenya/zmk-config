@@ -1,0 +1,90 @@
+/*
+ * Copyright (c) 2024 The ZMK Contributors
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/physical_layouts.h>
+
+/ {
+    leeloo_physical_layout: leeloo_physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+
+        keys = <
+            /* Row 0 */
+            <&key_physical_attrs 0 10 100 100 0 0 0> /* SW1 L */
+            <&key_physical_attrs 100 5 100 100 0 0 0> /* SW2 L */
+            <&key_physical_attrs 200 0 100 100 0 0 0> /* SW3 L */
+            <&key_physical_attrs 300 5 100 100 0 0 0> /* SW4 L */
+            <&key_physical_attrs 400 15 100 100 0 0 0> /* SW5 L */
+            <&key_physical_attrs 500 20 100 100 0 0 0> /* SW6 L */
+
+            <&key_physical_attrs 800 20 100 100 0 0 0> /* SW6 R */
+            <&key_physical_attrs 900 15 100 100 0 0 0> /* SW5 R */
+            <&key_physical_attrs 1000 5 100 100 0 0 0> /* SW4 R */
+            <&key_physical_attrs 1100 0 100 100 0 0 0> /* SW3 R */
+            <&key_physical_attrs 1200 5 100 100 0 0 0> /* SW2 R */
+            <&key_physical_attrs 1300 10 100 100 0 0 0> /* SW1 R */
+
+            /* Row 1 */
+            <&key_physical_attrs 0 110 100 100 0 0 0>
+            <&key_physical_attrs 100 105 100 100 0 0 0>
+            <&key_physical_attrs 200 100 100 100 0 0 0>
+            <&key_physical_attrs 300 105 100 100 0 0 0>
+            <&key_physical_attrs 400 115 100 100 0 0 0>
+            <&key_physical_attrs 500 120 100 100 0 0 0>
+
+            <&key_physical_attrs 800 120 100 100 0 0 0>
+            <&key_physical_attrs 900 115 100 100 0 0 0>
+            <&key_physical_attrs 1000 105 100 100 0 0 0>
+            <&key_physical_attrs 1100 100 100 100 0 0 0>
+            <&key_physical_attrs 1200 105 100 100 0 0 0>
+            <&key_physical_attrs 1300 110 100 100 0 0 0>
+
+            /* Row 2 */
+            <&key_physical_attrs 0 210 100 100 0 0 0>
+            <&key_physical_attrs 100 205 100 100 0 0 0>
+            <&key_physical_attrs 200 200 100 100 0 0 0>
+            <&key_physical_attrs 300 205 100 100 0 0 0>
+            <&key_physical_attrs 400 215 100 100 0 0 0>
+            <&key_physical_attrs 500 220 100 100 0 0 0>
+
+            <&key_physical_attrs 800 220 100 100 0 0 0>
+            <&key_physical_attrs 900 215 100 100 0 0 0>
+            <&key_physical_attrs 1000 205 100 100 0 0 0>
+            <&key_physical_attrs 1100 200 100 100 0 0 0>
+            <&key_physical_attrs 1200 205 100 100 0 0 0>
+            <&key_physical_attrs 1300 210 100 100 0 0 0>
+
+            /* Row 3 */
+            <&key_physical_attrs 0 310 100 100 0 0 0>
+            <&key_physical_attrs 100 305 100 100 0 0 0>
+            <&key_physical_attrs 200 300 100 100 0 0 0>
+            <&key_physical_attrs 300 305 100 100 0 0 0>
+            <&key_physical_attrs 400 315 100 100 0 0 0>
+            <&key_physical_attrs 500 320 100 100 0 0 0>
+            <&key_physical_attrs 600 350 100 100 0 0 0> /* SW29 L */
+
+            <&key_physical_attrs 700 350 100 100 0 0 0> /* SW29 R */
+            <&key_physical_attrs 800 320 100 100 0 0 0>
+            <&key_physical_attrs 900 315 100 100 0 0 0>
+            <&key_physical_attrs 1000 305 100 100 0 0 0>
+            <&key_physical_attrs 1100 300 100 100 0 0 0>
+            <&key_physical_attrs 1200 305 100 100 0 0 0>
+            <&key_physical_attrs 1300 310 100 100 0 0 0>
+
+            /* Row 4 (Thumb) */
+            <&key_physical_attrs 250 410 100 100 0 0 0> /* SW25 L */
+            <&key_physical_attrs 350 420 100 100 0 0 0> /* SW26 L */
+            <&key_physical_attrs 450 430 100 100 0 0 0> /* SW27 L */
+            <&key_physical_attrs 550 440 100 100 0 0 0> /* SW28 L */
+
+            <&key_physical_attrs 750 440 100 100 0 0 0> /* SW28 R */
+            <&key_physical_attrs 850 430 100 100 0 0 0> /* SW27 R */
+            <&key_physical_attrs 950 420 100 100 0 0 0> /* SW26 R */
+            <&key_physical_attrs 1050 410 100 100 0 0 0> /* SW25 R */
+        >;
+    };
+};

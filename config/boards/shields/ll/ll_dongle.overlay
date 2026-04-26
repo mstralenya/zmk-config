@@ -1,4 +1,11 @@
 #include "ll_peripheral.dtsi"
+#include "leeloo_physical_layout.dtsi"
+
+/ {
+    chosen {
+        zmk,physical-layout = &leeloo_physical_layout;
+    };
+};
 
 &kscan0 {
     col-gpios
