@@ -1,4 +1,4 @@
-#include "leeloo_rev2.dtsi"
+#include <dt-bindings/zmk/matrix_transform.h>
 
 &pinctrl {
     spi0_default: spi0_default {
