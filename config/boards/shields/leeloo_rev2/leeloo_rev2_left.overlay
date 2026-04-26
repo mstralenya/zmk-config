@@ -1,6 +1,1 @@
 #include "leeloo_rev2.dtsi"
-
-nice_view_spi: &spi0 {
-    status = "okay";
-    cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
-};

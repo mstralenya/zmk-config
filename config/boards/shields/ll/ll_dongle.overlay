@@ -1,10 +1,5 @@
 #include "ll_peripheral.dtsi"
 
-nice_view_spi: &spi0 {
-    status = "okay";
-    cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
-};
-
 &kscan0 {
     col-gpios
         = <&pro_micro 10 GPIO_ACTIVE_HIGH>
