@@ -14,14 +14,14 @@
 ---
 include:
   - board: nice_nano//zmk
-    shield: nice_view_adapter ll_left nice_view
+    shield: ll_left nice_view_adapter nice_view
   - board: nice_nano//zmk
-    shield: nice_view_adapter ll_right nice_view
+    shield: ll_right nice_view_adapter nice_view
   - board: nice_nano//zmk
-    shield: nice_view_adapter ll_dongle nice_view
+    shield: ll_dongle nice_view_adapter nice_view
   - board: nice_nano//zmk
     shield: settings_reset
   - board: nice_nano//zmk
-    shield: nice_view_adapter leeloo_rev2_left nice_view
+    shield: leeloo_rev2_left nice_view_adapter nice_view
   - board: nice_nano//zmk
-    shield: nice_view_adapter leeloo_rev2_right nice_view
+    shield: leeloo_rev2_right nice_view_adapter nice_view
