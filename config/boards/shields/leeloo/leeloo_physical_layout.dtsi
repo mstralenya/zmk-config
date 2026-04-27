@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <dt-bindings/zmk/physical_layouts.h>
+#include <physical_layouts.dtsi>
 
 / {
     leeloo_physical_layout: leeloo_physical_layout {
