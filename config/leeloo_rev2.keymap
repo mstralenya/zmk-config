@@ -9,6 +9,7 @@
 / {
     chosen {
         zmk,physical-layout = &leeloo_physical_layout;
+        /delete-property/ zmk,matrix-transform;
     };
 };
 
