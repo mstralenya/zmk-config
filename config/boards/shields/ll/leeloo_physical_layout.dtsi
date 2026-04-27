@@ -3,9 +3,12 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <physical_layouts.dtsi>
-
 / {
+    key_physical_attrs: key_physical_attrs {
+        compatible = "zmk,key-physical-attrs";
+        #key-cells = <7>;
+    };
+
     leeloo_physical_layout: leeloo_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
