@@ -20,7 +20,7 @@ include:
     shield: ll_right nice_view_adapter nice_view
     snippet: studio-rpc-usb-uart
   - board: nice_nano//zmk
-    shield: ll_dongle nice_view_adapter nice_view
+    shield: ll_dongle
     snippet: studio-rpc-usb-uart
   - board: nice_nano//zmk
     shield: settings_reset
