@@ -3,17 +3,14 @@
 
 / {
     chosen {
+        zmk,kscan = &mock_kscan;
         zmk,physical-layout = &leeloo_physical_layout;
     };
-};
 
-&kscan0 {
-    col-gpios
-        = <&pro_micro 10 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 16 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 14 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 15 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 18 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 19 GPIO_ACTIVE_HIGH>
-        ;
+    mock_kscan: mock_kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
 };

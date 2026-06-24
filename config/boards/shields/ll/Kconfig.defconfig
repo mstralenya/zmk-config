@@ -4,10 +4,14 @@
 if SHIELD_LL_DONGLE
     config ZMK_KEYBOARD_NAME
         default "Leeloo v2"
-    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    config ZMK_SPLIT_ROLE_CENTRAL
         default y
     config ZMK_USB
         default y
+    config BT_MAX_CONN
+        default 7
+    config BT_MAX_PAIRED
+        default 7
 endif
 
 if SHIELD_LL_LEFT || SHIELD_LL_RIGHT || SHIELD_LL_DONGLE
