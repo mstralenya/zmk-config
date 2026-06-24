@@ -19,3 +19,8 @@
     status = "disabled";
     col-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
 };
+
+&leeloo_physical_layout {
+    kscan = <&mock_kscan>;
+};
+
